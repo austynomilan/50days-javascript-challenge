@@ -1,3 +1,5 @@
+// for making the cards
+
 const panels = document.querySelectorAll('.panel');
 
 
