@@ -66,6 +66,11 @@ body{
     max-width: 100%;
 }
 
+.container.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
 nav{
     position: fixed;
     bottom: 40px;
@@ -77,16 +82,27 @@ nav{
 nav ul{
     list-style: none;
     padding-left: 30px ;
+    margin: 40px;
 }
 
 nav ul li{
     text-transform: uppercase;
-    margin: 40px;
-     transform: translateX(-150%);
+    margin-bottom: 40px;
+     transform: translateX(-100%);
      transition: transform 0.4s ease-in;
 }
 
 nav ul li i{
     font-size: 20px;
     margin-right: 10px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-200%);
+}
+
+nav ul li + li + li{
+    margin-left: 30px;
 }
