@@ -50,6 +50,9 @@ body{
     color: #fafafa;
 }
 
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
 .circle button:focus{
     outline: none;
 }
@@ -66,10 +69,12 @@ body{
     max-width: 100%;
 }
 
-.container.container.show-nav + nav li{
+.container.show-nav + nav li{
     transform: translateX(0);
     transition-delay: 0.3s;
 }
+
+
 
 nav{
     position: fixed;
