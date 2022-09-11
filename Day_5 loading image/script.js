@@ -1,7 +1,7 @@
 const bg = document.querySelector('.bg')
 const loadText = document.querySelector('.loading_text')
 
-load = 0;
+let load = 0;
 
 let int = setInterval(blurring, 30)
 
