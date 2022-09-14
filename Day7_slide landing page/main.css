@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=muli&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'muli' sans-serif;
+    height: 100vh;
+    margin: 0;
+}
 
