@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=muli&display=swap');
+
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -9,3 +15,75 @@ body{
     margin: 0;
 }
 
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    font-size: 4rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    white-space: nowrap;
+}
+
+.btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0.2rem solid #fff;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.box{
+    position: absolute;
+}
+
+.box.right{
+    right: 0;
+    width: 50%;
+    background: url('xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.box.box.right::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--right-bg-color);
+}
+
+.box.left{
+    left: 0;
+    width: 50%;
+    background: url('ps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.box.left::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--left-bg-color)
+}
