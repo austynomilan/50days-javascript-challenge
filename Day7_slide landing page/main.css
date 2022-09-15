@@ -129,3 +129,18 @@ h2{
 .hover-act2 .left{
     width: var(--other-width);
 }
+
+@media(max-width: 800px){
+    h2{
+        font-size: 1.5rem;
+        top: 30%;
+    }
+
+
+    .btn{
+        width: 10rem;
+        padding: 0.5;
+    }
+    
+
+}
