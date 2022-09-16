@@ -120,6 +120,7 @@ h2{
 
 .hover-act1 .right{
     width: var(--other-width);
+    z-index: -1;
 }
 
 .hover-act2 .right{
