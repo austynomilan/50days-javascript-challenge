@@ -5,6 +5,7 @@
 
 body{
     background-color: wheat;
+    color: #fff;
     font-family: 'muli' sans-serif;
     display: flex;
     align-items: center;
@@ -14,4 +15,56 @@ body{
     margin: 0;
 }
 
+h2{
+    text-align: center;
+}
 
+.container{
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: rgb(174, 140, 79);
+
+}
+
+.form_input{
+    position: relative;
+    margin: 20px 0 40px;
+}
+
+.form_input input{
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.text{
+    font-size: smaller;
+    text-align: center;
+}
+
+.form_input input:focus,
+.form_input input:valid {
+    outline: 0;
+}
+
+.btn{
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(174, 140, 79);
+}
+
+.btn:focus{
+    scale: 0.98;
+}
