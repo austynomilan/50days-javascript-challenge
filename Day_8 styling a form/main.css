@@ -56,6 +56,7 @@ h2{
 .form_input input:focus,
 .form_input input:valid {
     outline: 0;
+    border-bottom-color: wheat;
 }
 
 .btn{
@@ -74,4 +75,23 @@ h2{
 
 .btn:active{
     transform: scale(0.98);
+}
+
+.form_input label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.form_input label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition:0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form_input input:focus + label span,
+.form_input input:focus + label span{
+    color: wheat;
+    transform: translateY(35px);
 }
