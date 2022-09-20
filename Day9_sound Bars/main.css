@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=muli&display=swap');
+*{
+    box-sizing: border-box;
+}
 
+body{
+    font-family: 'muli' sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: bisque;
+    flex-wrap: wrap;
+
+}
+
+.btn{
+    border: 0;
+    margin: 1.2rem;
+    padding: 1.5rem 3rem;
+    background-color: cadetblue;
+    color: white;
+    font-family: muli;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
