@@ -67,14 +67,15 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0;
+    border:0;
+    border-radius: 50%;
     font-size: 16px;
     position: absolute;
     background-color: transparent;
     top: 30px;
     right: 30px;
     height: 30px;
-    width: 30px;
+    width: 30px;    
 }
 
 .faq-toggle .fa-times{
@@ -83,8 +84,17 @@ h1{
 
 .faq.active .faq-toggle .fa-times{
     display: block;
+   
 }
 
 .faq.active .faq-toggle .fa-chevron-down{
     display: none;
+}
+
+.faq.active .faq-toggle{
+    background-color: grey;
+    color: white;
+}
+.faq.active .faq-toggle:hover{
+    color: red;
 }
