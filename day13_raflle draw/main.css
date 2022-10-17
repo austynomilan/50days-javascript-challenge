@@ -24,6 +24,7 @@ body{
 .modal h3{
     text-align: center;
     margin: 20px;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -42,10 +43,18 @@ body{
     display: flex;
     flex-direction: flex-start;
     margin-bottom: 10px;
+    font-family: inherit;
 }
 
-.modal span{
+.tag{
     background-color: orange;
     color: white;
-    border-radius: 10px;
+    border-radius: 50px;
+    margin: 0 10px 10px 0;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.tag.highlight{
+    background-color: blue;
 }
