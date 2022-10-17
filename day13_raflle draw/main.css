@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'muli' sans-serif;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: url(img/sabiprice.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    opacity: 0.3;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+}
+.modal h3{
+    text-align: center;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.modal{
+    position: absolute;
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+}
+
+.modal textarea{
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+    box-shadow: 5px 5px 5px 5px  grey;
+    display: flex;
+    flex-direction: flex-start;
+    margin-bottom: 10px;
+}
+
+.modal span{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
